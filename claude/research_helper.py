@@ -44,4 +44,4 @@ def get_research_help(topic: str, num_articles: int):
 
         break
 
-get_research_help("Pirates Across the World", 7)
+get_research_help("Mount Everest", 2)
