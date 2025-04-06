@@ -1,0 +1,20 @@
+{"vars": {"complaint": "The app crashes every time I try to upload a photo"}, "assert": [{"type": "contains-all", "value": ["Software Bug"]}]}
+{"vars": {"complaint": "My printer isn't recognized by my computer"}, "assert": [{"type": "contains-all", "value": ["Hardware Malfunction"]}]}
+{"vars": {"complaint": "I can't figure out how to change my password"}, "assert": [{"type": "contains-all", "value": ["User Error"]}]}
+{"vars": {"complaint": "The website is completely down, I can't access any pages"}, "assert": [{"type": "contains-all", "value": ["Service Outage"]}]}
+{"vars": {"complaint": "It would be great if the app had a dark mode option"}, "assert": [{"type": "contains-all", "value": ["Feature Request"]}]}
+{"vars": {"complaint": "The software keeps freezing when I try to save large files"}, "assert": [{"type": "contains-all", "value": ["Software Bug"]}]}
+{"vars": {"complaint": "My wireless mouse isn't working, even with new batteries"}, "assert": [{"type": "contains-all", "value": ["Hardware Malfunction"]}]}
+{"vars": {"complaint": "I accidentally deleted some important files, can you help me recover them?"}, "assert": [{"type": "contains-all", "value": ["User Error"]}]}
+{"vars": {"complaint": "None of your servers are responding, is there an outage?"}, "assert": [{"type": "contains-all", "value": ["Service Outage"]}]}
+{"vars": {"complaint": "Could you add a feature to export data in CSV format?"}, "assert": [{"type": "contains-all", "value": ["Feature Request"]}]}
+{"vars": {"complaint": "The app is crashing and my phone is overheating"}, "assert": [{"type": "contains-all", "value": ["Software Bug", "Hardware Malfunction"]}]}
+{"vars": {"complaint": "I can't remember my password!"}, "assert": [{"type": "contains-all", "value": ["User Error"]}]}
+{"vars": {"complaint": "The new update broke something and the app no longer works for me"}, "assert": [{"type": "contains-all", "value": ["Software Bug"]}]}
+{"vars": {"complaint": "I think I installed something incorrectly, now my computer won't start at all"}, "assert": [{"type": "contains-all", "value": ["User Error", "Hardware Malfunction"]}]}
+{"vars": {"complaint": "Your service is down, and I urgently need a feature to batch process files"}, "assert": [{"type": "contains-all", "value": ["Service Outage", "Feature Request"]}]}
+{"vars": {"complaint": "The graphics card is making weird noises"}, "assert": [{"type": "contains-all", "value": ["Hardware Malfunction"]}]}
+{"vars": {"complaint": "My keyboard just totally stopped working out of nowhere"}, "assert": [{"type": "contains-all", "value": ["Hardware Malfunction"]}]}
+{"vars": {"complaint": "Whenever I open your app, my phone gets really slow"}, "assert": [{"type": "contains-all", "value": ["Software Bug"]}]}
+{"vars": {"complaint": "Can you make the interface more user-friendly? I always get lost in the menus"}, "assert": [{"type": "contains-all", "value": ["Feature Request", "User Error"]}]}
+{"vars": {"complaint": "The cloud storage isn't syncing and I can't access my files from other devices"}, "assert": [{"type": "contains-all", "value": ["Software Bug", "Service Outage"]}]}

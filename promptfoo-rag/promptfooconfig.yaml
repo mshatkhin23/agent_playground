@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: 'RAG - End to end test'
+
+prompts:
+  - '{{question}}'
+
+providers:
+  - file://retrieve.py
+
+tests: dataset.jsonl
