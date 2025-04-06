@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+prompts:
+  - promptfoo_prompts.py:simple_prompt
+  - promptfoo_prompts.py:better_prompt
+  - promptfoo_prompts.py:chain_of_thought_prompt
+
+providers:
+  - "anthropic:messages:claude-3-7-sonnet-20250219"
+  
+
+tests: promptfoo_dataset.csv

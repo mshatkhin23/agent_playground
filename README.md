@@ -1,2 +1,3 @@
-# agent_playground
-test
+# Agent Playground
+
+Various projects with agents

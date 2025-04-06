@@ -1,0 +1,396 @@
+2025-04-04T13:12:24.837Z [ERROR]: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-04-04T13:12:24.837Z [ERROR]: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-04-04T13:12:24.837Z [ERROR]: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-04-04T13:12:24.837Z [ERROR]: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-04-04T13:12:26.012Z [ERROR]: Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+2025-04-04T13:12:26.014Z [ERROR]: Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+2025-04-04T13:12:26.015Z [ERROR]: Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+2025-04-04T13:12:26.015Z [ERROR]: Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+2025-04-04T13:12:26.195Z [ERROR]: Error running Python script: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Stack Trace: Error: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+    at PythonShell.parseError (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:311:21)
+    at terminateIfNeeded (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:193:32)
+    at ChildProcess.<anonymous> (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:185:13)
+    at ChildProcess.emit (node:events:507:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-04-04T13:12:26.195Z [ERROR]: Error removing /var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772344585-b96319e23a0a2.json: Error: ENOENT: no such file or directory, unlink '/var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772344585-b96319e23a0a2.json'
+2025-04-04T13:12:26.200Z [ERROR]: Error running Python script: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Stack Trace: Error: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+    at PythonShell.parseError (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:311:21)
+    at terminateIfNeeded (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:193:32)
+    at ChildProcess.<anonymous> (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:185:13)
+    at ChildProcess.emit (node:events:507:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-04-04T13:12:26.200Z [ERROR]: Error removing /var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772344589-fb6c32245182e.json: Error: ENOENT: no such file or directory, unlink '/var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772344589-fb6c32245182e.json'
+2025-04-04T13:12:26.202Z [ERROR]: Error running Python script: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Stack Trace: Error: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+    at PythonShell.parseError (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:311:21)
+    at terminateIfNeeded (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:193:32)
+    at ChildProcess.<anonymous> (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:185:13)
+    at ChildProcess.emit (node:events:507:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-04-04T13:12:26.202Z [ERROR]: Error removing /var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772344590-45c8c7cd6d2f4.json: Error: ENOENT: no such file or directory, unlink '/var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772344590-45c8c7cd6d2f4.json'
+2025-04-04T13:12:26.208Z [ERROR]: Error running Python script: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Stack Trace: Error: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+    at PythonShell.parseError (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:311:21)
+    at terminateIfNeeded (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:193:32)
+    at ChildProcess.<anonymous> (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:185:13)
+    at ChildProcess.emit (node:events:507:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-04-04T13:12:26.208Z [ERROR]: Error removing /var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772344591-f2a3bb733426.json: Error: ENOENT: no such file or directory, unlink '/var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772344591-f2a3bb733426.json'
+2025-04-04T13:12:26.346Z [ERROR]: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-04-04T13:12:26.346Z [ERROR]: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-04-04T13:12:26.346Z [ERROR]: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-04-04T13:12:26.348Z [ERROR]: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-04-04T13:12:27.305Z [ERROR]: Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+2025-04-04T13:12:27.320Z [ERROR]: Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+2025-04-04T13:12:27.326Z [ERROR]: Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+2025-04-04T13:12:27.355Z [ERROR]: Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+2025-04-04T13:12:27.450Z [ERROR]: Error running Python script: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Stack Trace: Error: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+    at PythonShell.parseError (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:311:21)
+    at terminateIfNeeded (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:193:32)
+    at ChildProcess.<anonymous> (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:185:13)
+    at ChildProcess.emit (node:events:507:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-04-04T13:12:27.451Z [ERROR]: Error removing /var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772346205-e59d69ffbe9b6.json: Error: ENOENT: no such file or directory, unlink '/var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772346205-e59d69ffbe9b6.json'
+2025-04-04T13:12:27.456Z [ERROR]: Error running Python script: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Stack Trace: Error: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+    at PythonShell.parseError (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:311:21)
+    at terminateIfNeeded (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:193:32)
+    at ChildProcess.<anonymous> (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:185:13)
+    at ChildProcess.emit (node:events:507:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-04-04T13:12:27.457Z [ERROR]: Error removing /var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772346203-5660c34a2b14f.json: Error: ENOENT: no such file or directory, unlink '/var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772346203-5660c34a2b14f.json'
+2025-04-04T13:12:27.468Z [ERROR]: Error running Python script: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Stack Trace: Error: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+    at PythonShell.parseError (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:311:21)
+    at terminateIfNeeded (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:193:32)
+    at ChildProcess.<anonymous> (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:185:13)
+    at ChildProcess.emit (node:events:507:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-04-04T13:12:27.468Z [ERROR]: Error removing /var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772346206-fe60620bbd068.json: Error: ENOENT: no such file or directory, unlink '/var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772346206-fe60620bbd068.json'
+2025-04-04T13:12:27.488Z [ERROR]: Error running Python script: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Stack Trace: Error: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+    at PythonShell.parseError (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:311:21)
+    at terminateIfNeeded (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:193:32)
+    at ChildProcess.<anonymous> (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:185:13)
+    at ChildProcess.emit (node:events:507:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-04-04T13:12:27.488Z [ERROR]: Error removing /var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772346210-d5c7131509142.json: Error: ENOENT: no such file or directory, unlink '/var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772346210-d5c7131509142.json'
+2025-04-04T13:12:27.591Z [ERROR]: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-04-04T13:12:28.316Z [ERROR]: Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+2025-04-04T13:12:28.401Z [ERROR]: Error running Python script: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Stack Trace: Error: /Users/maxshatkhin/Projects/genai/agent_playground/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+  File "/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/promptfoo/dist/src/python/wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/maxshatkhin/Projects/genai/agent_playground/promptfoo-rag/retrieve.py", line 14, in <module>
+    ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+    at PythonShell.parseError (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:311:21)
+    at terminateIfNeeded (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:193:32)
+    at ChildProcess.<anonymous> (/Users/maxshatkhin/.npm/_npx/81bbc6515d992ace/node_modules/python-shell/index.js:185:13)
+    at ChildProcess.emit (node:events:507:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-04-04T13:12:28.402Z [ERROR]: Error removing /var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772347454-6e45c9f0e287.json: Error: ENOENT: no such file or directory, unlink '/var/folders/y0/762ljzms3nd99mchmwz21m1h0000gn/T/promptfoo-python-output-json-1743772347454-6e45c9f0e287.json'
