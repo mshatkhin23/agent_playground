@@ -1,0 +1,1044 @@
+[
+  {
+    "evaluation-run-id": "run-001",
+    "evaluation-run-name": "Claude 3 Sonnet - Customer Support Classification",
+    "evaluation-config": {
+      "dataset": {
+        "bri": "customer_support_classification"
+      },
+      "predictor": {
+        "module": "models.py:classify_complaint",
+        "args": {"model_version": "claude-3-sonnet", "temperature": 0.7}
+      },
+      "evaluators": [
+        {
+          "module": "evaluators.py:accuracy_evaluator",
+          "args": {"threshold": 0.8}
+        },
+        {
+          "module": "evaluators.py:latency_evaluator",
+          "args": {"max_latency_ms": 1000}
+        }
+      ]
+    },
+    "aggregate-metrics": [
+      {"name": "accuracy-avg", "value": 0.85},
+      {"name": "latency-avg-ms", "value": 350},
+      {"name": "success-rate", "value": 0.92}
+    ],
+    "instance-metrics": [
+      {
+        "instance-id": "1",
+        "input": "The app crashes when I try to upload large files",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 1.0,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 250,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "2",
+        "input": "I can't find the settings menu in your application",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Partially correct - could also be a UI/UX issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 180,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "3",
+        "input": "The website is down for everyone in our office",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.95,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 210,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "4",
+        "input": "My keyboard stopped working after the latest update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.9,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 190,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "5",
+        "input": "Can you add a dark mode to the application?",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 220,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "6",
+        "input": "The app freezes when I try to export my data",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.95,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 240,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "7",
+        "input": "I don't understand how to use the new dashboard",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.75,
+            "reason": "Partially correct - could also be a UI/UX issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 200,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "8",
+        "input": "The server is not responding to any requests",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.9,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 230,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "9",
+        "input": "My monitor keeps flickering after the update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 210,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "10",
+        "input": "Please add support for multiple languages",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 190,
+            "reason": "Fast response time"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "evaluation-run-id": "run-002",
+    "evaluation-run-name": "Claude 3 Opus - Customer Complaints Classification",
+    "evaluation-config": {
+      "dataset": {"bri": "customer_support_classification"},
+      "predictor": {
+        "module": "models.py:classify_complaint",
+        "args": {"model_version": "claude-3-opus", "temperature": 0.5}
+      },
+      "evaluators": [
+        {
+          "module": "evaluators.py:accuracy_evaluator",
+          "args": {"threshold": 0.9}
+        },
+        {
+          "module": "evaluators.py:latency_evaluator",
+          "args": {"max_latency_ms": 800}
+        }
+      ]
+    },
+    "aggregate-metrics": [
+      {"name": "accuracy-avg", "value": 0.92},
+      {"name": "latency-avg-ms", "value": 280},
+      {"name": "success-rate", "value": 0.95}
+    ],
+    "instance-metrics": [
+      {
+        "instance-id": "1",
+        "input": "The app crashes when I try to upload large files",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.95,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 220,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "2",
+        "input": "I can't find the settings menu in your application",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as user error"
+          },
+          {
+            "name": "latency-ms",
+            "value": 190,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "3",
+        "input": "The website is down for everyone in our office",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.9,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 200,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "4",
+        "input": "My keyboard stopped working after the latest update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.95,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 180,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "5",
+        "input": "Can you add a dark mode to the application?",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.9,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 210,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "6",
+        "input": "The app freezes when I try to export my data",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 230,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "7",
+        "input": "I don't understand how to use the new dashboard",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as user error"
+          },
+          {
+            "name": "latency-ms",
+            "value": 190,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "8",
+        "input": "The server is not responding to any requests",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.95,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 220,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "9",
+        "input": "My monitor keeps flickering after the update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.9,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 200,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "10",
+        "input": "Please add support for multiple languages",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 180,
+            "reason": "Fast response time"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "evaluation-run-id": "run-003",
+    "evaluation-run-name": "GPT-4 - Customer Support Classification",
+    "evaluation-config": {
+      "dataset": {"bri": "customer_support_classification"},
+      "predictor": {
+        "module": "models.py:classify_complaint",
+        "args": {"model_version": "gpt-4", "temperature": 0.3}
+      },
+      "evaluators": [
+        {
+          "module": "evaluators.py:accuracy_evaluator",
+          "args": {"threshold": 0.8}
+        },
+        {
+          "module": "evaluators.py:latency_evaluator",
+          "args": {"max_latency_ms": 1000}
+        }
+      ]
+    },
+    "aggregate-metrics": [
+      {"name": "accuracy-avg", "value": 0.88},
+      {"name": "latency-avg-ms", "value": 320},
+      {"name": "success-rate", "value": 0.93}
+    ],
+    "instance-metrics": [
+      {
+        "instance-id": "1",
+        "input": "The app crashes when I try to upload large files",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.9,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 280,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "2",
+        "input": "I can't find the settings menu in your application",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as user error"
+          },
+          {
+            "name": "latency-ms",
+            "value": 250,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "3",
+        "input": "The website is down for everyone in our office",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.95,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 270,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "4",
+        "input": "My keyboard stopped working after the latest update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 260,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "5",
+        "input": "Can you add a dark mode to the application?",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.9,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 290,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "6",
+        "input": "The app freezes when I try to export my data",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 300,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "7",
+        "input": "I don't understand how to use the new dashboard",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as user error"
+          },
+          {
+            "name": "latency-ms",
+            "value": 280,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "8",
+        "input": "The server is not responding to any requests",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.9,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 310,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "9",
+        "input": "My monitor keeps flickering after the update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 290,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "10",
+        "input": "Please add support for multiple languages",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.9,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 270,
+            "reason": "Fast response time"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "evaluation-run-id": "run-004",
+    "evaluation-run-name": "GPT-3.5 Turbo - Customer Support Classification",
+    "evaluation-config": {
+      "dataset": {"bri": "customer_support_classification"},
+      "predictor": {
+        "module": "models.py:classify_complaint",
+        "args": {"model_version": "gpt-3.5-turbo", "temperature": 0.2}
+      },
+      "evaluators": [
+        {
+          "module": "evaluators.py:accuracy_evaluator",
+          "args": {"threshold": 0.8}
+        },
+        {
+          "module": "evaluators.py:latency_evaluator",
+          "args": {"max_latency_ms": 1000}
+        }
+      ]
+    },
+    "aggregate-metrics": [
+      {"name": "accuracy-avg", "value": 0.82},
+      {"name": "latency-avg-ms", "value": 180},
+      {"name": "success-rate", "value": 0.9}
+    ],
+    "instance-metrics": [
+      {
+        "instance-id": "1",
+        "input": "The app crashes when I try to upload large files",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 150,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "2",
+        "input": "I can't find the settings menu in your application",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.75,
+            "reason": "Correctly identified as user error"
+          },
+          {
+            "name": "latency-ms",
+            "value": 160,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "3",
+        "input": "The website is down for everyone in our office",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 170,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "4",
+        "input": "My keyboard stopped working after the latest update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 160,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "5",
+        "input": "Can you add a dark mode to the application?",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 150,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "6",
+        "input": "The app freezes when I try to export my data",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 180,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "7",
+        "input": "I don't understand how to use the new dashboard",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.75,
+            "reason": "Correctly identified as user error"
+          },
+          {
+            "name": "latency-ms",
+            "value": 160,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "8",
+        "input": "The server is not responding to any requests",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 170,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "9",
+        "input": "My monitor keeps flickering after the update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.85,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 160,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "10",
+        "input": "Please add support for multiple languages",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 150,
+            "reason": "Fast response time"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "evaluation-run-id": "run-005",
+    "evaluation-run-name": "Claude 3 Haiku - Customer Support Classification",
+    "evaluation-config": {
+      "dataset": {"bri": "customer_support_classification"},
+      "predictor": {
+        "module": "models.py:classify_complaint",
+        "args": {"model_version": "claude-3-haiku", "temperature": 0.1}
+      },
+      "evaluators": [
+        {
+          "module": "evaluators.py:accuracy_evaluator",
+          "args": {"threshold": 0.8}
+        },
+        {
+          "module": "evaluators.py:latency_evaluator",
+          "args": {"max_latency_ms": 1000}
+        }
+      ]
+    },
+    "aggregate-metrics": [
+      {"name": "accuracy-avg", "value": 0.78},
+      {"name": "latency-avg-ms", "value": 120},
+      {"name": "success-rate", "value": 0.88}
+    ],
+    "instance-metrics": [
+      {
+        "instance-id": "1",
+        "input": "The app crashes when I try to upload large files",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 100,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "2",
+        "input": "I can't find the settings menu in your application",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.7,
+            "reason": "Correctly identified as user error"
+          },
+          {
+            "name": "latency-ms",
+            "value": 110,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "3",
+        "input": "The website is down for everyone in our office",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.75,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 120,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "4",
+        "input": "My keyboard stopped working after the latest update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 110,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "5",
+        "input": "Can you add a dark mode to the application?",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.75,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 100,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "6",
+        "input": "The app freezes when I try to export my data",
+        "output": "Software Bug",
+        "reference-output": {"expected_classes": ["Software Bug"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as a software bug"
+          },
+          {
+            "name": "latency-ms",
+            "value": 120,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "7",
+        "input": "I don't understand how to use the new dashboard",
+        "output": "User Error",
+        "reference-output": {"expected_classes": ["User Error"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.7,
+            "reason": "Correctly identified as user error"
+          },
+          {
+            "name": "latency-ms",
+            "value": 110,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "8",
+        "input": "The server is not responding to any requests",
+        "output": "Service Outage",
+        "reference-output": {"expected_classes": ["Service Outage"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.75,
+            "reason": "Correctly identified as a service outage"
+          },
+          {
+            "name": "latency-ms",
+            "value": 120,
+            "reason": "Response time within acceptable range"
+          }
+        ]
+      },
+      {
+        "instance-id": "9",
+        "input": "My monitor keeps flickering after the update",
+        "output": "Hardware Malfunction",
+        "reference-output": {"expected_classes": ["Hardware Malfunction"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.8,
+            "reason": "Correctly identified as hardware issue"
+          },
+          {
+            "name": "latency-ms",
+            "value": 110,
+            "reason": "Fast response time"
+          }
+        ]
+      },
+      {
+        "instance-id": "10",
+        "input": "Please add support for multiple languages",
+        "output": "Feature Request",
+        "reference-output": {"expected_classes": ["Feature Request"]},
+        "metrics": [
+          {
+            "name": "accuracy",
+            "value": 0.75,
+            "reason": "Correctly identified as feature request"
+          },
+          {
+            "name": "latency-ms",
+            "value": 100,
+            "reason": "Fast response time"
+          }
+        ]
+      }
+    ]
+  }
+]
