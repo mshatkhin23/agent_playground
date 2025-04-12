@@ -1,0 +1,3091 @@
+{
+  "evalId": "eval-wOf-2025-04-06T22:53:55",
+  "results": {
+    "version": 3,
+    "timestamp": "2025-04-06T22:53:55.240Z",
+    "prompts": [
+      {
+        "raw": "def basic_prompt(complaint):\n    return f\"\"\"\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {complaint}\n\n    Classification:\n    \"\"\"\n\ndef improved_prompt(complaint):\n    return f\"\"\"\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{complaint}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    \"\"\"",
+        "label": "prompts.py:basic_prompt",
+        "id": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "provider": "anthropic:claude-3-7-sonnet-20250219",
+        "metrics": {
+          "score": 16,
+          "testPassCount": 16,
+          "testFailCount": 4,
+          "testErrorCount": 0,
+          "assertPassCount": 16,
+          "assertFailCount": 4,
+          "totalLatencyMs": 33,
+          "tokenUsage": {
+            "total": 2422,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 2422,
+            "numRequests": 20,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.008778000000000001
+        }
+      },
+      {
+        "raw": "def basic_prompt(complaint):\n    return f\"\"\"\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {complaint}\n\n    Classification:\n    \"\"\"\n\ndef improved_prompt(complaint):\n    return f\"\"\"\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{complaint}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    \"\"\"",
+        "label": "prompts.py:improved_prompt",
+        "id": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "provider": "anthropic:claude-3-7-sonnet-20250219",
+        "metrics": {
+          "score": 18,
+          "testPassCount": 18,
+          "testFailCount": 2,
+          "testErrorCount": 0,
+          "assertPassCount": 18,
+          "assertFailCount": 2,
+          "totalLatencyMs": 45,
+          "tokenUsage": {
+            "total": 9943,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 9943,
+            "numRequests": 20,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.03135300000000001
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0.000435,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "685dc2ee-e2c7-4f32-aaec-dc7f88947c2e",
+        "latencyMs": 5,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': \"My printer isn't recognized by my computer\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 117,
+            "total": 117
+          },
+          "cost": 0.000435
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "My printer isn't recognized by my computer"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #2",
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "complaint": "My printer isn't recognized by my computer"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001545,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "c7d2e749-6a88-447a-87bf-8fedb7beaf59",
+        "latencyMs": 9,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'The app crashes every time I try to upload a photo'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug",
+          "tokenUsage": {
+            "cached": 495,
+            "total": 495
+          },
+          "cost": 0.001545
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The app crashes every time I try to upload a photo"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #1",
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "complaint": "The app crashes every time I try to upload a photo"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00041700000000000005,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "e3c99bed-9d63-46a2-896b-bd37c63a73de",
+        "latencyMs": 10,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'The app crashes every time I try to upload a photo'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug",
+          "tokenUsage": {
+            "cached": 119,
+            "total": 119
+          },
+          "cost": 0.00041700000000000005
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The app crashes every time I try to upload a photo"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #1",
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "complaint": "The app crashes every time I try to upload a photo"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0015630000000000002,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "0e923797-5bc5-471e-8f75-5ac3233619aa",
+        "latencyMs": 13,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': \"My printer isn't recognized by my computer\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 493,
+            "total": 493
+          },
+          "cost": 0.0015630000000000002
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "My printer isn't recognized by my computer"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #2",
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "complaint": "My printer isn't recognized by my computer"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000411,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "User Error"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "32431e86-bd78-4ef7-8ba3-81760a0947c2",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': \"I can't figure out how to change my password\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "User Error",
+          "tokenUsage": {
+            "cached": 117,
+            "total": 117
+          },
+          "cost": 0.000411
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "I can't figure out how to change my password"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "User Error"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #3",
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {
+          "complaint": "I can't figure out how to change my password"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001539,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "User Error"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "718abdba-0f70-4c73-ab14-ad43a8f74386",
+        "latencyMs": 2,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': \"I can't figure out how to change my password\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "User Error",
+          "tokenUsage": {
+            "cached": 493,
+            "total": 493
+          },
+          "cost": 0.001539
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "I can't figure out how to change my password"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "User Error"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #3",
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {
+          "complaint": "I can't figure out how to change my password"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000447,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Service Outage"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "bff8e37f-0e72-44c1-9d61-daa7d97854a6",
+        "latencyMs": 3,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': \"The website is completely down, I can't access any pages\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Service Outage",
+          "tokenUsage": {
+            "cached": 121,
+            "total": 121
+          },
+          "cost": 0.000447
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The website is completely down, I can't access any pages"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Service Outage"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #4",
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {
+          "complaint": "The website is completely down, I can't access any pages"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001575,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Service Outage"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "2885c38a-f129-4aea-afc5-7c05fbce6a91",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': \"The website is completely down, I can't access any pages\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Service Outage",
+          "tokenUsage": {
+            "cached": 497,
+            "total": 497
+          },
+          "cost": 0.001575
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The website is completely down, I can't access any pages"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Service Outage"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #4",
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {
+          "complaint": "The website is completely down, I can't access any pages"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00042,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Feature Request"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "a7c89082-6acd-431c-abb3-a45ff84b02ea",
+        "latencyMs": 2,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'It would be great if the app had a dark mode option'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Feature Request",
+          "tokenUsage": {
+            "cached": 120,
+            "total": 120
+          },
+          "cost": 0.00042
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "It would be great if the app had a dark mode option"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Feature Request"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #5",
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "vars": {
+          "complaint": "It would be great if the app had a dark mode option"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00042,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "03bbd9d2-29e5-4529-8a97-b64ee18f44dd",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'The software keeps freezing when I try to save large files'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug",
+          "tokenUsage": {
+            "cached": 120,
+            "total": 120
+          },
+          "cost": 0.00042
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The software keeps freezing when I try to save large files"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #6",
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "vars": {
+          "complaint": "The software keeps freezing when I try to save large files"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0015480000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Feature Request"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "d64eb7bd-3d71-437b-9430-e5eb92c078e1",
+        "latencyMs": 4,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'It would be great if the app had a dark mode option'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Feature Request",
+          "tokenUsage": {
+            "cached": 496,
+            "total": 496
+          },
+          "cost": 0.0015480000000000001
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "It would be great if the app had a dark mode option"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Feature Request"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #5",
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "vars": {
+          "complaint": "It would be great if the app had a dark mode option"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0015480000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "ff930941-d66a-4820-bee5-a37e8bb1ebd5",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'The software keeps freezing when I try to save large files'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug",
+          "tokenUsage": {
+            "cached": 496,
+            "total": 496
+          },
+          "cost": 0.0015480000000000001
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The software keeps freezing when I try to save large files"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #6",
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "vars": {
+          "complaint": "The software keeps freezing when I try to save large files"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000444,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "43781c71-347d-436a-a102-33ca34a3aab1",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': \"My wireless mouse isn't working, even with new batteries\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 120,
+            "total": 120
+          },
+          "cost": 0.000444
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "My wireless mouse isn't working, even with new batteries"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #7",
+          "metadata": {}
+        },
+        "testIdx": 6,
+        "vars": {
+          "complaint": "My wireless mouse isn't working, even with new batteries"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001572,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "38327bca-918d-4d75-a1c5-383555148593",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': \"My wireless mouse isn't working, even with new batteries\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 496,
+            "total": 496
+          },
+          "cost": 0.001572
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "My wireless mouse isn't working, even with new batteries"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #7",
+          "metadata": {}
+        },
+        "testIdx": 6,
+        "vars": {
+          "complaint": "My wireless mouse isn't working, even with new batteries"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00042600000000000005,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "User Error"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "d99b0942-9944-44cf-b1eb-486b8abee5ca",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'I accidentally deleted some important files, can you help me recover them?'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "User Error",
+          "tokenUsage": {
+            "cached": 122,
+            "total": 122
+          },
+          "cost": 0.00042600000000000005
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "I accidentally deleted some important files, can you help me recover them?"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "User Error"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #8",
+          "metadata": {}
+        },
+        "testIdx": 7,
+        "vars": {
+          "complaint": "I accidentally deleted some important files, can you help me recover them?"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001554,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "User Error"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "052201cd-4957-4593-b241-5dec7a2b1c3d",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'I accidentally deleted some important files, can you help me recover them?'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "User Error",
+          "tokenUsage": {
+            "cached": 498,
+            "total": 498
+          },
+          "cost": 0.001554
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "I accidentally deleted some important files, can you help me recover them?"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "User Error"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #8",
+          "metadata": {}
+        },
+        "testIdx": 7,
+        "vars": {
+          "complaint": "I accidentally deleted some important files, can you help me recover them?"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000453,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Service Outage"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "a88c41dd-fdc3-4e22-9298-c86b9dc54475",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'None of your servers are responding, is there an outage?'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Service Outage",
+          "tokenUsage": {
+            "cached": 123,
+            "total": 123
+          },
+          "cost": 0.000453
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "None of your servers are responding, is there an outage?"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Service Outage"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #9",
+          "metadata": {}
+        },
+        "testIdx": 8,
+        "vars": {
+          "complaint": "None of your servers are responding, is there an outage?"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0015810000000000002,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Service Outage"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "835111b1-2c22-47e7-ac51-26a451f18404",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'None of your servers are responding, is there an outage?'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Service Outage",
+          "tokenUsage": {
+            "cached": 499,
+            "total": 499
+          },
+          "cost": 0.0015810000000000002
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "None of your servers are responding, is there an outage?"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Service Outage"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #9",
+          "metadata": {}
+        },
+        "testIdx": 8,
+        "vars": {
+          "complaint": "None of your servers are responding, is there an outage?"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00042,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Feature Request"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "aafc1a5b-4760-477c-879e-88e05652bb7a",
+        "latencyMs": 2,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'Could you add a feature to export data in CSV format?'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Feature Request",
+          "tokenUsage": {
+            "cached": 120,
+            "total": 120
+          },
+          "cost": 0.00042
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "Could you add a feature to export data in CSV format?"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Feature Request"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #10",
+          "metadata": {}
+        },
+        "testIdx": 9,
+        "vars": {
+          "complaint": "Could you add a feature to export data in CSV format?"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0015480000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Feature Request"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "ec903870-8ee2-41ed-9fa7-bcb113599612",
+        "latencyMs": 3,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'Could you add a feature to export data in CSV format?'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Feature Request",
+          "tokenUsage": {
+            "cached": 496,
+            "total": 496
+          },
+          "cost": 0.0015480000000000001
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "Could you add a feature to export data in CSV format?"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Feature Request"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #10",
+          "metadata": {}
+        },
+        "testIdx": 9,
+        "vars": {
+          "complaint": "Could you add a feature to export data in CSV format?"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000495,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug",
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "1d2fe35f-177d-4759-9524-c03505685d1d",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'The app is crashing and my phone is overheating'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug, Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 125,
+            "total": 125
+          },
+          "cost": 0.000495
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The app is crashing and my phone is overheating"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug",
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #11",
+          "metadata": {}
+        },
+        "testIdx": 10,
+        "vars": {
+          "complaint": "The app is crashing and my phone is overheating"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001623,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug",
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "320d7c84-ded5-483b-bae9-40e3e9ba6393",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'The app is crashing and my phone is overheating'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug, Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 501,
+            "total": 501
+          },
+          "cost": 0.001623
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The app is crashing and my phone is overheating"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug",
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #11",
+          "metadata": {}
+        },
+        "testIdx": 10,
+        "vars": {
+          "complaint": "The app is crashing and my phone is overheating"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00039900000000000005,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "User Error"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "f736a3cc-7857-48e5-8f89-2db3068301f1",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': \"I can't remember my password!\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "User Error",
+          "tokenUsage": {
+            "cached": 113,
+            "total": 113
+          },
+          "cost": 0.00039900000000000005
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "I can't remember my password!"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "User Error"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #12",
+          "metadata": {}
+        },
+        "testIdx": 11,
+        "vars": {
+          "complaint": "I can't remember my password!"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001527,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "User Error"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "1fa1188e-fd1e-4350-866a-8dd0410cf621",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': \"I can't remember my password!\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "User Error",
+          "tokenUsage": {
+            "cached": 489,
+            "total": 489
+          },
+          "cost": 0.001527
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "I can't remember my password!"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "User Error"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #12",
+          "metadata": {}
+        },
+        "testIdx": 11,
+        "vars": {
+          "complaint": "I can't remember my password!"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000423,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "99cb8e70-dd0b-4bae-8259-d416b61a0ae4",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'The new update broke something and the app no longer works for me'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug",
+          "tokenUsage": {
+            "cached": 121,
+            "total": 121
+          },
+          "cost": 0.000423
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The new update broke something and the app no longer works for me"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #13",
+          "metadata": {}
+        },
+        "testIdx": 12,
+        "vars": {
+          "complaint": "The new update broke something and the app no longer works for me"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001551,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "08efbbb8-81d3-4cf3-845d-d5ec651098a7",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'The new update broke something and the app no longer works for me'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug",
+          "tokenUsage": {
+            "cached": 497,
+            "total": 497
+          },
+          "cost": 0.001551
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The new update broke something and the app no longer works for me"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #13",
+          "metadata": {}
+        },
+        "testIdx": 12,
+        "vars": {
+          "complaint": "The new update broke something and the app no longer works for me"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000432,
+        "error": "Expected output to contain all of [User Error, Hardware Malfunction]. Missing: [Hardware Malfunction]",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Expected output to contain all of [User Error, Hardware Malfunction]. Missing: [Hardware Malfunction]",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain all of [User Error, Hardware Malfunction]. Missing: [Hardware Malfunction]",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "User Error",
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "6453ee97-6adf-4532-bcc0-2c5e846a4ec5",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': \"I think I installed something incorrectly, now my computer won't start at all\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "User Error",
+          "tokenUsage": {
+            "cached": 124,
+            "total": 124
+          },
+          "cost": 0.000432
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "complaint": "I think I installed something incorrectly, now my computer won't start at all"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "User Error",
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #14",
+          "metadata": {}
+        },
+        "testIdx": 13,
+        "vars": {
+          "complaint": "I think I installed something incorrectly, now my computer won't start at all"
+        },
+        "metadata": {},
+        "failureReason": 1
+      },
+      {
+        "cost": 0.001635,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "User Error",
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "1b30adbb-1e2d-4e7b-a468-e4d9295f8ee0",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': \"I think I installed something incorrectly, now my computer won't start at all\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction, User Error",
+          "tokenUsage": {
+            "cached": 505,
+            "total": 505
+          },
+          "cost": 0.001635
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "I think I installed something incorrectly, now my computer won't start at all"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "User Error",
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #14",
+          "metadata": {}
+        },
+        "testIdx": 13,
+        "vars": {
+          "complaint": "I think I installed something incorrectly, now my computer won't start at all"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0005070000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Service Outage",
+                  "Feature Request"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "eaebaa9b-33e2-44cd-a0ba-e6b8399cb54b",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'Your service is down, and I urgently need a feature to batch process files'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Service Outage, Feature Request",
+          "tokenUsage": {
+            "cached": 129,
+            "total": 129
+          },
+          "cost": 0.0005070000000000001
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "Your service is down, and I urgently need a feature to batch process files"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Service Outage",
+                "Feature Request"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #15",
+          "metadata": {}
+        },
+        "testIdx": 14,
+        "vars": {
+          "complaint": "Your service is down, and I urgently need a feature to batch process files"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001635,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Service Outage",
+                  "Feature Request"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "0424e2ca-1242-4b52-ae17-1158582923bd",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'Your service is down, and I urgently need a feature to batch process files'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Service Outage, Feature Request",
+          "tokenUsage": {
+            "cached": 505,
+            "total": 505
+          },
+          "cost": 0.001635
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "Your service is down, and I urgently need a feature to batch process files"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Service Outage",
+                "Feature Request"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #15",
+          "metadata": {}
+        },
+        "testIdx": 14,
+        "vars": {
+          "complaint": "Your service is down, and I urgently need a feature to batch process files"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000438,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "e72df37a-3f0f-48a8-ad2b-a3b1621fb76d",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'The graphics card is making weird noises'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 118,
+            "total": 118
+          },
+          "cost": 0.000438
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The graphics card is making weird noises"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #16",
+          "metadata": {}
+        },
+        "testIdx": 15,
+        "vars": {
+          "complaint": "The graphics card is making weird noises"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0015660000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "e88a5b7b-0126-45a4-8646-020d2e4c9f24",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'The graphics card is making weird noises'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 494,
+            "total": 494
+          },
+          "cost": 0.0015660000000000001
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "The graphics card is making weird noises"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #16",
+          "metadata": {}
+        },
+        "testIdx": 15,
+        "vars": {
+          "complaint": "The graphics card is making weird noises"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00044100000000000004,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "0c2ecba3-c862-4ab8-a4f5-c19d95542612",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'My keyboard just totally stopped working out of nowhere'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 119,
+            "total": 119
+          },
+          "cost": 0.00044100000000000004
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "My keyboard just totally stopped working out of nowhere"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #17",
+          "metadata": {}
+        },
+        "testIdx": 16,
+        "vars": {
+          "complaint": "My keyboard just totally stopped working out of nowhere"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.001569,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Hardware Malfunction"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "4f0aefb5-54e4-4c5b-92a8-3ba5a7242fdc",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'My keyboard just totally stopped working out of nowhere'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 495,
+            "total": 495
+          },
+          "cost": 0.001569
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "My keyboard just totally stopped working out of nowhere"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Hardware Malfunction"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #17",
+          "metadata": {}
+        },
+        "testIdx": 16,
+        "vars": {
+          "complaint": "My keyboard just totally stopped working out of nowhere"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00045,
+        "error": "Expected output to contain all of [Software Bug]. Missing: [Software Bug]",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Expected output to contain all of [Software Bug]. Missing: [Software Bug]",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain all of [Software Bug]. Missing: [Software Bug]",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "8e5849bd-8bda-483f-b457-d1da571752fb",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'Whenever I open your app, my phone gets really slow'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Hardware Malfunction",
+          "tokenUsage": {
+            "cached": 122,
+            "total": 122
+          },
+          "cost": 0.00045
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "complaint": "Whenever I open your app, my phone gets really slow"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #18",
+          "metadata": {}
+        },
+        "testIdx": 17,
+        "vars": {
+          "complaint": "Whenever I open your app, my phone gets really slow"
+        },
+        "metadata": {},
+        "failureReason": 1
+      },
+      {
+        "cost": 0.0015480000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "b22389a8-fe28-46ee-bf3d-b4196026e396",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'Whenever I open your app, my phone gets really slow'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug",
+          "tokenUsage": {
+            "cached": 496,
+            "total": 496
+          },
+          "cost": 0.0015480000000000001
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "complaint": "Whenever I open your app, my phone gets really slow"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #18",
+          "metadata": {}
+        },
+        "testIdx": 17,
+        "vars": {
+          "complaint": "Whenever I open your app, my phone gets really slow"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000438,
+        "error": "Expected output to contain all of [Feature Request, User Error]. Missing: [User Error]",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Expected output to contain all of [Feature Request, User Error]. Missing: [User Error]",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain all of [Feature Request, User Error]. Missing: [User Error]",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Feature Request",
+                  "User Error"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "5ab93210-c6c8-4517-ab4a-c50fe462a420",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': 'Can you make the interface more user-friendly? I always get lost in the menus'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Feature Request",
+          "tokenUsage": {
+            "cached": 126,
+            "total": 126
+          },
+          "cost": 0.000438
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "complaint": "Can you make the interface more user-friendly? I always get lost in the menus"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Feature Request",
+                "User Error"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #19",
+          "metadata": {}
+        },
+        "testIdx": 18,
+        "vars": {
+          "complaint": "Can you make the interface more user-friendly? I always get lost in the menus"
+        },
+        "metadata": {},
+        "failureReason": 1
+      },
+      {
+        "cost": 0.0015660000000000001,
+        "error": "Expected output to contain all of [Feature Request, User Error]. Missing: [User Error]",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Expected output to contain all of [Feature Request, User Error]. Missing: [User Error]",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain all of [Feature Request, User Error]. Missing: [User Error]",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Feature Request",
+                  "User Error"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "6c2fe02f-af1b-4907-bca6-701b5f45d262",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': 'Can you make the interface more user-friendly? I always get lost in the menus'}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Feature Request",
+          "tokenUsage": {
+            "cached": 502,
+            "total": 502
+          },
+          "cost": 0.0015660000000000001
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "complaint": "Can you make the interface more user-friendly? I always get lost in the menus"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Feature Request",
+                "User Error"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #19",
+          "metadata": {}
+        },
+        "testIdx": 18,
+        "vars": {
+          "complaint": "Can you make the interface more user-friendly? I always get lost in the menus"
+        },
+        "metadata": {},
+        "failureReason": 1
+      },
+      {
+        "cost": 0.000462,
+        "error": "Expected output to contain all of [Software Bug, Service Outage]. Missing: [Software Bug]",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Expected output to contain all of [Software Bug, Service Outage]. Missing: [Software Bug]",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain all of [Software Bug, Service Outage]. Missing: [Software Bug]",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug",
+                  "Service Outage"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "ecbf20f4-9166-4a6f-8fd2-a115ec0203d2",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    Classify the following customer complaint into one or more of these categories: \n    Software Bug, Hardware Malfunction, User Error, Feature Request, or Service Outage.\n    Only respond with the classification.\n\n    Complaint: {'vars': {'complaint': \"The cloud storage isn't syncing and I can't access my files from other devices\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}\n\n    Classification:\n    ",
+          "label": "prompts.py:basic_prompt"
+        },
+        "promptId": "99508fccc38f766b66f8066716e31a55df2d0d71b300c47711a5aa9845909ff6",
+        "promptIdx": 0,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Service Outage",
+          "tokenUsage": {
+            "cached": 126,
+            "total": 126
+          },
+          "cost": 0.000462
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "complaint": "The cloud storage isn't syncing and I can't access my files from other devices"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug",
+                "Service Outage"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #20",
+          "metadata": {}
+        },
+        "testIdx": 19,
+        "vars": {
+          "complaint": "The cloud storage isn't syncing and I can't access my files from other devices"
+        },
+        "metadata": {},
+        "failureReason": 1
+      },
+      {
+        "cost": 0.00156,
+        "error": "Expected output to contain all of [Software Bug, Service Outage]. Missing: [Service Outage]",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Expected output to contain all of [Software Bug, Service Outage]. Missing: [Service Outage]",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain all of [Software Bug, Service Outage]. Missing: [Service Outage]",
+              "assertion": {
+                "type": "contains-all",
+                "value": [
+                  "Software Bug",
+                  "Service Outage"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "8cad8d0a-aa87-4ba5-ba2c-bcf71620863e",
+        "latencyMs": 1,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\n    You are an AI assistant specializing in customer support issue classification. Your task is to analyze customer complaints and categorize them into one or more of the following categories:\n\n    1. Software Bug: Issues related to software not functioning as intended.\n    2. Hardware Malfunction: Problems with physical devices or components.\n    3. User Error: Difficulties arising from user misunderstanding or misuse.\n    4. Feature Request: Suggestions for new functionalities or improvements.\n    5. Service Outage: System-wide issues affecting service availability.\n\n    Important Guidelines:\n    - A complaint may fall into multiple categories. If so, list all that apply but try to prioritize picking a single category when possible.\n\n    Examples:\n    1. Complaint: \"The app crashes when I try to save my progress.\"\n    Classification: Software Bug\n\n    2. Complaint: \"My keyboard isn't working after I spilled coffee on it.\"\n    Classification: Hardware Malfunction\n\n    3. Complaint: \"I can't find the login button on your website.\"\n    Classification: User Error\n\n    4. Complaint: \"It would be great if your app had a dark mode.\"\n    Classification: Feature Request\n\n    5. Complaint: \"None of your services are loading for me or my colleagues.\"\n    Classification: Service Outage\n\n    6. Complaint \"Complaint: The app breaks every time I try to change my profile picture\"\n    Classification: Software Bug\n\n    7. Complaint \"The app is acting buggy on my phone and it seems like your website is down, so I'm completely stuck!\"\n    Classification: Software Bug, Service Outage\n\n    8. Complaint: \"Your software makes my computer super laggy and awful, I hate it!\"\n    Classification: Software Bug\n\n    9. Complaint: \"Your dumb app always breaks when I try to do anything with images.\"\n    Classification: 'Software Bug'\n\n    Now, please classify the following customer complaint:\n\n    <complaint>{'vars': {'complaint': \"The cloud storage isn't syncing and I can't access my files from other devices\"}, 'provider': {'id': 'anthropic:claude-3-7-sonnet-20250219', 'label': ''}, 'config': {}}</complaint>\n\n    Only respond with the appropriate categories and nothing else.\n    Classification:\n    ",
+          "label": "prompts.py:improved_prompt"
+        },
+        "promptId": "f6667a939f5ef2ba22d335d2ececbf9fcd59862f3566a5b152804533e6579be8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-3-7-sonnet-20250219",
+          "label": ""
+        },
+        "response": {
+          "output": "Software Bug",
+          "tokenUsage": {
+            "cached": 500,
+            "total": 500
+          },
+          "cost": 0.00156
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "complaint": "The cloud storage isn't syncing and I can't access my files from other devices"
+          },
+          "assert": [
+            {
+              "type": "contains-all",
+              "value": [
+                "Software Bug",
+                "Service Outage"
+              ]
+            }
+          ],
+          "options": {},
+          "description": "Row #20",
+          "metadata": {}
+        },
+        "testIdx": 19,
+        "vars": {
+          "complaint": "The cloud storage isn't syncing and I can't access my files from other devices"
+        },
+        "metadata": {},
+        "failureReason": 1
+      }
+    ],
+    "stats": {
+      "successes": 34,
+      "failures": 6,
+      "errors": 0,
+      "tokenUsage": {
+        "cached": 12365,
+        "completion": 0,
+        "prompt": 0,
+        "total": 12365,
+        "numRequests": 40,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        }
+      }
+    }
+  },
+  "config": {
+    "description": "Complaint Classification Eval",
+    "prompts": [
+      "prompts.py:basic_prompt",
+      "prompts.py:improved_prompt"
+    ],
+    "providers": [
+      "anthropic:messages:claude-3-7-sonnet-20250219"
+    ],
+    "tests": "dataset.jsonl",
+    "sharing": true,
+    "outputPath": [
+      "eval_output.json"
+    ],
+    "extensions": []
+  },
+  "shareableUrl": null
+}
